@@ -98,7 +98,7 @@
 					}
 				},
 				{
-					"type": "Switch",
+					"type": "LightSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -107,7 +107,9 @@
 						"live-preview": false
 					},
 					"uid": 24,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"isOn": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 18,
@@ -288,6 +290,39 @@
 						"height": 101,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ArmoryKey",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {
+						"DestroyOutsideLayout": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1216,
+						"y": 128,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -2,6 +2,10 @@
 	"name": "COMMON",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "Way back to the main hall"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -24,6 +28,138 @@
 				}
 			],
 			"sid": 841106342301587
+		},
+		{
+			"eventType": "comment",
+			"text": "Light switch control"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 448964847837763,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 529490063404691,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "LightSwitch",
+							"sid": 705597800662908,
+							"parameters": {
+								"instance-variable": "isOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 246433942256607,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "LightSwitch",
+							"sid": 137886062030833,
+							"parameters": {
+								"instance-variable": "isOn"
+							}
+						}
+					],
+					"sid": 746566166029948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 378216771728287
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 506170984601875,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "LightSwitch",
+							"sid": 311598018616235,
+							"parameters": {
+								"instance-variable": "isOn"
+							}
+						}
+					],
+					"sid": 765988101772013
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 931963069532016
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ArmoryKey",
+					"sid": 345878754803053,
+					"parameters": {
+						"x": "1216",
+						"y": "128"
+					}
+				}
+			],
+			"sid": 644786855391746,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 473555737440378,
+							"parameters": {
+								"variable": "hasArmoryKey"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ArmoryKey",
+							"sid": 227585221537700,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 674603765845101
+				}
+			]
 		}
 	],
 	"sid": 982320429138788

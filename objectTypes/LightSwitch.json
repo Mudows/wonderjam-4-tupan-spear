@@ -1,0 +1,45 @@
+{
+	"name": "LightSwitch",
+	"plugin-id": "Sprite",
+	"sid": 290625148483989,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isOn",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 494502464419532
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9219842,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 648303886529337,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

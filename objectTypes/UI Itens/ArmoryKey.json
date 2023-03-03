@@ -1,29 +1,35 @@
 {
-	"name": "Switch",
+	"name": "ArmoryKey",
 	"plugin-id": "Sprite",
-	"sid": 290625148483989,
-	"isGlobal": false,
+	"sid": 166290883368279,
+	"isGlobal": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 776559842351658
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9219842,
+						"imageSpriteId": 7986073,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 648303886529337,
+				"sid": 381233967315839,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

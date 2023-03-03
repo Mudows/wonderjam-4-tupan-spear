@@ -47,6 +47,13 @@
 			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "70u74uy4i3m",
@@ -55,7 +62,7 @@
 			"Label",
 			"HandWithKey",
 			"KeycardLvl2",
-			"Switch",
+			"LightSwitch",
 			"DoorLight"
 		],
 		"subfolders": [
@@ -96,6 +103,13 @@
 				"items": [],
 				"subfolders": [],
 				"name": "Dorm"
+			},
+			{
+				"items": [
+					"ArmoryKey"
+				],
+				"subfolders": [],
+				"name": "UI Itens"
 			}
 		]
 	},
