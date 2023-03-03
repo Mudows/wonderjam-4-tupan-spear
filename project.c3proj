@@ -60,8 +60,6 @@
 	"objectTypes": {
 		"items": [
 			"Label",
-			"HandWithKey",
-			"KeycardLvl2",
 			"LightSwitch",
 			"DoorLight"
 		],
@@ -100,7 +98,10 @@
 				"name": "Common"
 			},
 			{
-				"items": [],
+				"items": [
+					"HandWithKey",
+					"KeycardLvl2"
+				],
 				"subfolders": [],
 				"name": "Dorm"
 			},
