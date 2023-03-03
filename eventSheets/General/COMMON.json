@@ -9,7 +9,7 @@
 					"objectClass": "Touch",
 					"sid": 594177082860431,
 					"parameters": {
-						"object": "MainHall"
+						"object": "MainHallDoor"
 					}
 				}
 			],

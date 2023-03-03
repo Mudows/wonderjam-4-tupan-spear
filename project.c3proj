@@ -52,7 +52,11 @@
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
 		"items": [
-			"Label"
+			"Label",
+			"HandWithKey",
+			"KeycardLvl2",
+			"Switch",
+			"DoorLight"
 		],
 		"subfolders": [
 			{
@@ -77,11 +81,21 @@
 				"name": "Main Hall"
 			},
 			{
-				"items": [
-					"MainHall"
-				],
+				"items": [],
 				"subfolders": [],
 				"name": "Office"
+			},
+			{
+				"items": [
+					"MainHallDoor"
+				],
+				"subfolders": [],
+				"name": "Common"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Dorm"
 			}
 		]
 	},

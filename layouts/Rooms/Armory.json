@@ -50,7 +50,7 @@
 					}
 				},
 				{
-					"type": "MainHall",
+					"type": "MainHallDoor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
