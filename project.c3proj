@@ -108,7 +108,8 @@
 			{
 				"items": [
 					"ArmoryKey",
-					"Keycard2"
+					"Keycard2",
+					"Axe"
 				],
 				"subfolders": [],
 				"name": "UI Itens"
