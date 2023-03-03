@@ -1,0 +1,16 @@
+{
+	"name": "GLOBALS",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "testString",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 489630136991299
+		}
+	],
+	"sid": 500448979529222
+}

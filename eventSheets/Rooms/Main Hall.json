@@ -1,0 +1,162 @@
+{
+	"name": "Main Hall",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 918134481870458,
+					"parameters": {
+						"object": "TerminalDoor"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "TerminalDoor",
+					"sid": 417141126613571,
+					"parameters": {
+						"instance-variable": "isLocked"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 202857792012114,
+					"parameters": {
+						"layout": "Terminal"
+					}
+				}
+			],
+			"sid": 713481246696492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 560688159517556,
+					"parameters": {
+						"object": "ArmoryDoor"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ArmoryDoor",
+					"sid": 944858235880345,
+					"parameters": {
+						"instance-variable": "isLocked"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 460969631258186,
+					"parameters": {
+						"layout": "Armory"
+					}
+				}
+			],
+			"sid": 871245374881376
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 157835632003000,
+					"parameters": {
+						"object": "DormDoor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 461056192145305,
+					"parameters": {
+						"layout": "Dorm"
+					}
+				}
+			],
+			"sid": 495366164511888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 451750210247137,
+					"parameters": {
+						"object": "GeneratorDoor"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "GeneratorDoor",
+					"sid": 659176670983228,
+					"parameters": {
+						"instance-variable": "isLocked"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 897541887923707,
+					"parameters": {
+						"layout": "Generator"
+					}
+				}
+			],
+			"sid": 959393228959244
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 292254758884124,
+					"parameters": {
+						"object": "OfficeDoor"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "OfficeDoor",
+					"sid": 657972903644351,
+					"parameters": {
+						"instance-variable": "isLocked"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 746084414482968,
+					"parameters": {
+						"layout": "Office"
+					}
+				}
+			],
+			"sid": 876225183091972
+		}
+	],
+	"sid": 128307160433825
+}

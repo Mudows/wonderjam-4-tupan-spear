@@ -29,6 +29,20 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -37,7 +51,9 @@
 	],
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Label"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -48,6 +64,24 @@
 				],
 				"subfolders": [],
 				"name": "Plugins"
+			},
+			{
+				"items": [
+					"GeneratorDoor",
+					"OfficeDoor",
+					"ArmoryDoor",
+					"DormDoor",
+					"TerminalDoor"
+				],
+				"subfolders": [],
+				"name": "Main Hall"
+			},
+			{
+				"items": [
+					"MainHall"
+				],
+				"subfolders": [],
+				"name": "Office"
 			}
 		]
 	},
@@ -58,18 +92,47 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"Main Hall"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Armory",
+					"Dorm",
+					"Generator",
+					"Main Hall",
+					"Office",
+					"Terminal"
+				],
+				"subfolders": [],
+				"name": "Rooms"
+			}
+		]
 	},
 	"eventSheets": {
-		"items": [
-			"Main Hall",
-			"Globals",
-			"Functions"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"FUNCTIONS",
+					"GLOBALS",
+					"COMMON"
+				],
+				"subfolders": [],
+				"name": "General"
+			},
+			{
+				"items": [
+					"Armory",
+					"Dorm",
+					"Generator",
+					"Main Hall",
+					"Office",
+					"Terminal"
+				],
+				"subfolders": [],
+				"name": "Rooms"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {

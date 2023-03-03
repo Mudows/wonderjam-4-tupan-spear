@@ -1,0 +1,45 @@
+{
+	"name": "DormDoor",
+	"plugin-id": "Sprite",
+	"sid": 897048767068107,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isLocked",
+			"type": "boolean",
+			"desc": "Check if the door is locked.",
+			"show": true,
+			"sid": 438637528693565
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 150,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5567847,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 181041670318204,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

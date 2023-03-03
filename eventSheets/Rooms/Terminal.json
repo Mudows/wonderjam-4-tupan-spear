@@ -1,0 +1,10 @@
+{
+	"name": "Terminal",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "COMMON"
+		}
+	],
+	"sid": 566482966492505
+}

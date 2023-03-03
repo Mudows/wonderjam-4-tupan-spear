@@ -1,0 +1,45 @@
+{
+	"name": "OfficeDoor",
+	"plugin-id": "Sprite",
+	"sid": 525913778391637,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isLocked",
+			"type": "boolean",
+			"desc": "Check if the door is locked.",
+			"show": true,
+			"sid": 958627304588563
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 150,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 965029,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 732259523964601,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

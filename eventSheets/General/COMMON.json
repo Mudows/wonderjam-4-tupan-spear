@@ -1,0 +1,30 @@
+{
+	"name": "COMMON",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 594177082860431,
+					"parameters": {
+						"object": "MainHall"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 156702021259701,
+					"parameters": {
+						"layout": "Main Hall"
+					}
+				}
+			],
+			"sid": 841106342301587
+		}
+	],
+	"sid": 982320429138788
+}
