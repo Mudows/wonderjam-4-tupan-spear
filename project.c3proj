@@ -109,7 +109,11 @@
 				"items": [
 					"ArmoryKey",
 					"Keycard2",
-					"Axe"
+					"Axe",
+					"Keycard1",
+					"PasswordPart_A",
+					"PasswordPart_B",
+					"PasswordPart_C"
 				],
 				"subfolders": [],
 				"name": "UI Itens"

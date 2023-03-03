@@ -1,0 +1,57 @@
+{
+	"name": "Keycard1",
+	"plugin-id": "Sprite",
+	"sid": 221628444612139,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4283107,
+						"collisionPoly": {
+							"points": [
+								0.171875,
+								0.171875,
+								0.5,
+								0.171875,
+								0.828125,
+								0.171875,
+								0.953125,
+								0.5,
+								0.859375,
+								0.859375,
+								0.5,
+								0.859375,
+								0.140625,
+								0.859375,
+								0.046875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 832188561838194,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
