@@ -95,6 +95,48 @@
 				}
 			],
 			"sid": 797070810933093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 318355173362812,
+					"parameters": {
+						"object": "KeycardLvl2"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 119607220585125,
+					"parameters": {
+						"layer": "\"Light\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 563819333593650,
+					"parameters": {
+						"variable": "hasKeyCard2",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Keycard2",
+					"sid": 415093402161635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 176213510036423
 		}
 	],
 	"sid": 555515558670645

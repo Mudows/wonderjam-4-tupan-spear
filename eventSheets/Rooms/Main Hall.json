@@ -65,15 +65,7 @@
 					}
 				}
 			],
-			"sid": 871245374881376,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 210778076078380
-				}
-			]
+			"sid": 871245374881376
 		},
 		{
 			"eventType": "block",
