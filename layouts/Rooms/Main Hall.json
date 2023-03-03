@@ -147,8 +147,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1104,
-						"y": 182,
+						"x": 1088,
+						"y": 192,
 						"width": 150,
 						"height": 300,
 						"originX": 0.5,
@@ -178,8 +178,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1104,
-						"y": 517,
+						"x": 1088,
+						"y": 512,
 						"width": 150,
 						"height": 300,
 						"originX": 0.5,

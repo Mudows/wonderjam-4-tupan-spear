@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside layout",
 			"author": "Scirra",
@@ -61,7 +68,8 @@
 		"items": [
 			"Label",
 			"LightSwitch",
-			"DoorLight"
+			"DoorLight",
+			"FireAxeEmergencyLight"
 		],
 		"subfolders": [
 			{
@@ -72,7 +80,7 @@
 					"Touch"
 				],
 				"subfolders": [],
-				"name": "Plugins"
+				"name": "PLUGINS"
 			},
 			{
 				"items": [
@@ -117,6 +125,13 @@
 				],
 				"subfolders": [],
 				"name": "UI Itens"
+			},
+			{
+				"items": [
+					"FireAxeBox"
+				],
+				"subfolders": [],
+				"name": "Armory"
 			}
 		]
 	},
