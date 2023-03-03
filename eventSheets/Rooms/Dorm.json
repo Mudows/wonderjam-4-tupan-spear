@@ -4,6 +4,139 @@
 		{
 			"eventType": "include",
 			"includeSheet": "COMMON"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 224793686410474,
+					"parameters": {
+						"object": "HandWithKey"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "HandWithKey",
+					"sid": 701794709384233,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 275145127333248,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "HandWithKey",
+					"sid": 254110757667981,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 702456543420468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 275499440081004,
+					"parameters": {
+						"object": "HandWithKey"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "HandWithKey",
+					"sid": 608015130172897,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "HandWithKey",
+					"sid": 273730274319929,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 225423811033323,
+					"parameters": {
+						"variable": "hasArmoryKey",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ArmoryKey",
+					"sid": 172225284286553,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 797070810933093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 318355173362812,
+					"parameters": {
+						"object": "KeycardLvl2"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 119607220585125,
+					"parameters": {
+						"layer": "\"Light\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 563819333593650,
+					"parameters": {
+						"variable": "hasKeyCard2",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Keycard2",
+					"sid": 415093402161635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 176213510036423
 		}
 	],
 	"sid": 555515558670645

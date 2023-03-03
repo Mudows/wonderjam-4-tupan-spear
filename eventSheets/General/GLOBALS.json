@@ -3,13 +3,23 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "testString",
-			"type": "string",
-			"initialValue": "",
+			"name": "hasArmoryKey",
+			"type": "boolean",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 489630136991299
+			"sid": 132343219096642
+		},
+		{
+			"eventType": "variable",
+			"name": "hasKeyCard2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 323878831294415
 		}
 	],
 	"sid": 500448979529222

@@ -47,12 +47,23 @@
 			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
 		"items": [
-			"Label"
+			"Label",
+			"HandWithKey",
+			"KeycardLvl2",
+			"LightSwitch",
+			"DoorLight"
 		],
 		"subfolders": [
 			{
@@ -77,11 +88,29 @@
 				"name": "Main Hall"
 			},
 			{
-				"items": [
-					"MainHall"
-				],
+				"items": [],
 				"subfolders": [],
 				"name": "Office"
+			},
+			{
+				"items": [
+					"MainHallDoor"
+				],
+				"subfolders": [],
+				"name": "Common"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Dorm"
+			},
+			{
+				"items": [
+					"ArmoryKey",
+					"Keycard2"
+				],
+				"subfolders": [],
+				"name": "UI Itens"
 			}
 		]
 	},

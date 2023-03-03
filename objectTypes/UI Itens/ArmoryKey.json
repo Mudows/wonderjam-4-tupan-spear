@@ -1,37 +1,35 @@
 {
-	"name": "MainHall",
+	"name": "ArmoryKey",
 	"plugin-id": "Sprite",
-	"sid": 777568334115547,
-	"isGlobal": false,
-	"instanceVariables": [
+	"sid": 166290883368279,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "isLocked",
-			"type": "boolean",
-			"desc": "Check if the door is locked.",
-			"show": true,
-			"sid": 701235508247383
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 776559842351658
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 300,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8330464,
+						"imageSpriteId": 7986073,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 211144435134907,
+				"sid": 381233967315839,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
