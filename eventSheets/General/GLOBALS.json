@@ -20,6 +20,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 323878831294415
+		},
+		{
+			"eventType": "variable",
+			"name": "hasAxe",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 317484175513827
+		},
+		{
+			"eventType": "variable",
+			"name": "isPowerOn",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 271697057489378
 		}
 	],
 	"sid": 500448979529222

@@ -65,12 +65,7 @@
 	],
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
-		"items": [
-			"Label",
-			"LightSwitch",
-			"DoorLight",
-			"FireAxeEmergencyLight"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -100,10 +95,13 @@
 			},
 			{
 				"items": [
-					"MainHallDoor"
+					"MainHallDoor",
+					"DoorLight",
+					"Label",
+					"LightSwitch"
 				],
 				"subfolders": [],
-				"name": "Common"
+				"name": "COMMON"
 			},
 			{
 				"items": [
@@ -128,10 +126,19 @@
 			},
 			{
 				"items": [
-					"FireAxeBox"
+					"FireAxeBox",
+					"FireAxeEmergencyLight"
 				],
 				"subfolders": [],
 				"name": "Armory"
+			},
+			{
+				"items": [
+					"DoorLight_HalfCircle",
+					"Generator"
+				],
+				"subfolders": [],
+				"name": "Generator"
 			}
 		]
 	},

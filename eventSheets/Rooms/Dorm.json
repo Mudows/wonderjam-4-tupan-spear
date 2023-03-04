@@ -9,6 +9,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 901091875825573,
+					"parameters": {
+						"variable": "hasArmoryKey"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "HandWithKey",
+					"sid": 997033880667389,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 572729734837377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 224793686410474,

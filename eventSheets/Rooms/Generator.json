@@ -4,6 +4,31 @@
 		{
 			"eventType": "include",
 			"includeSheet": "COMMON"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 420328219639329,
+					"parameters": {
+						"object": "Generator"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 501445532291408,
+					"parameters": {
+						"variable": "isPowerOn",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 599615003039014
 		}
 	],
 	"sid": 230001874516863
