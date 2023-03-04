@@ -60,11 +60,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "LightSwitch",
-							"sid": 705597800662908,
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 775588582362633,
 							"parameters": {
-								"instance-variable": "isOn"
+								"layer": "\"Light\""
 							}
 						}
 					],
@@ -72,22 +72,14 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 246433942256607,
+							"sid": 103932950143818,
 							"parameters": {
 								"layer": "\"Light\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "toggle-boolean-instvar",
-							"objectClass": "LightSwitch",
-							"sid": 137886062030833,
-							"parameters": {
-								"instance-variable": "isOn"
+								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 746566166029948
+					"sid": 813391647952375
 				},
 				{
 					"eventType": "block",
@@ -95,29 +87,21 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 378216771728287
+							"sid": 332121297786479
 						}
 					],
 					"actions": [
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 506170984601875,
+							"sid": 355668295390687,
 							"parameters": {
 								"layer": "\"Light\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "toggle-boolean-instvar",
-							"objectClass": "LightSwitch",
-							"sid": 311598018616235,
-							"parameters": {
-								"instance-variable": "isOn"
+								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 765988101772013
+					"sid": 423741265264379
 				}
 			]
 		}

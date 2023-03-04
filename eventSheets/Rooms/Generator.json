@@ -19,6 +19,14 @@
 			],
 			"actions": [
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 596031797922308,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 501445532291408,
