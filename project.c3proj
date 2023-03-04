@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside layout",
 			"author": "Scirra",
@@ -60,10 +67,9 @@
 	"objectTypes": {
 		"items": [
 			"Label",
-			"HandWithKey",
-			"KeycardLvl2",
 			"LightSwitch",
-			"DoorLight"
+			"DoorLight",
+			"FireAxeEmergencyLight"
 		],
 		"subfolders": [
 			{
@@ -74,7 +80,7 @@
 					"Touch"
 				],
 				"subfolders": [],
-				"name": "Plugins"
+				"name": "PLUGINS"
 			},
 			{
 				"items": [
@@ -100,17 +106,32 @@
 				"name": "Common"
 			},
 			{
-				"items": [],
+				"items": [
+					"HandWithKey",
+					"KeycardLvl2"
+				],
 				"subfolders": [],
 				"name": "Dorm"
 			},
 			{
 				"items": [
 					"ArmoryKey",
-					"Keycard2"
+					"Keycard2",
+					"Axe",
+					"Keycard1",
+					"PasswordPart_A",
+					"PasswordPart_B",
+					"PasswordPart_C"
 				],
 				"subfolders": [],
 				"name": "UI Itens"
+			},
+			{
+				"items": [
+					"FireAxeBox"
+				],
+				"subfolders": [],
+				"name": "Armory"
 			}
 		]
 	},

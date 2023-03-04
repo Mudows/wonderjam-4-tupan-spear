@@ -1,17 +1,9 @@
 {
-	"name": "LightSwitch",
+	"name": "FireAxeBox",
 	"plugin-id": "Sprite",
-	"sid": 290625148483989,
+	"sid": 615358399063432,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "isOn",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 494502464419532
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -19,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9650563,
+						"imageSpriteId": 6508151,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 648303886529337,
+				"sid": 983540438331217,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

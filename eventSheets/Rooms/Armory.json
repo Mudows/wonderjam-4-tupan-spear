@@ -4,6 +4,75 @@
 		{
 			"eventType": "include",
 			"includeSheet": "COMMON"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 931847655020437,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "FireAxeEmergencyLight",
+					"sid": 343459706349301,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "random(0.01,0.3)",
+						"off-time": "random(0.01,0.3)",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 389314373811704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 648081366467535,
+					"parameters": {
+						"object": "FireAxeBox"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 372984129130558,
+					"parameters": {
+						"variable": "hasAxe"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Axe",
+					"sid": 508727354664433,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 349506626221943,
+					"parameters": {
+						"variable": "hasAxe",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 403856900128532
 		}
 	],
 	"sid": 972516201963156
