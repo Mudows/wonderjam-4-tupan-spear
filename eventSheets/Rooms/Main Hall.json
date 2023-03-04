@@ -44,28 +44,65 @@
 					"parameters": {
 						"object": "ArmoryDoor"
 					}
+				}
+			],
+			"actions": [],
+			"sid": 871245374881376,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ArmoryDoor",
+							"sid": 468776016823823,
+							"parameters": {
+								"instance-variable": "isLocked"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 309415832935558
 				},
 				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "ArmoryDoor",
-					"sid": 944858235880345,
-					"parameters": {
-						"instance-variable": "isLocked"
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 341312918412866,
+							"parameters": {
+								"variable": "hasArmoryKey"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ArmoryDoor",
+							"sid": 926308320152954,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ArmoryKey",
+							"sid": 606776454962361
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 947294545923819,
+							"parameters": {
+								"layout": "Armory"
+							}
+						}
+					],
+					"sid": 765924338764673
 				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 460969631258186,
-					"parameters": {
-						"layout": "Armory"
-					}
-				}
-			],
-			"sid": 871245374881376
+			]
 		},
 		{
 			"eventType": "block",
