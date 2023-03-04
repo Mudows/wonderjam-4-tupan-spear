@@ -7,6 +7,146 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 399614635932620,
+					"parameters": {
+						"object": "ArmoryDoor"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 189339753762665,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ArmoryDoor",
+							"sid": 218984410756650,
+							"parameters": {
+								"instance-variable": "isLocked"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 658245239345110
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 334045316635555,
+							"parameters": {
+								"variable": "hasArmoryKey"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ArmoryDoor",
+							"sid": 206451137003215,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ArmoryKey",
+							"sid": 720904112524124
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 727815546838166,
+							"parameters": {
+								"layout": "Armory"
+							}
+						}
+					],
+					"sid": 674524592534505
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 343614140364289,
+					"parameters": {
+						"object": "GeneratorDoor"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 929276515183837,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "GeneratorDoor",
+							"sid": 890068906865495,
+							"parameters": {
+								"instance-variable": "isLocked"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 866458433614281
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 446377641298024,
+							"parameters": {
+								"variable": "hasAxe"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "GeneratorDoor",
+							"sid": 798476136208905,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Axe",
+							"sid": 797072578135819
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 499547972262042,
+							"parameters": {
+								"layout": "Generator"
+							}
+						}
+					],
+					"sid": 157053360266388
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 918134481870458,
 					"parameters": {
 						"object": "TerminalDoor"
@@ -40,76 +180,6 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 560688159517556,
-					"parameters": {
-						"object": "ArmoryDoor"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 871245374881376,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "ArmoryDoor",
-							"sid": 468776016823823,
-							"parameters": {
-								"instance-variable": "isLocked"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 309415832935558
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 341312918412866,
-							"parameters": {
-								"variable": "hasArmoryKey"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "ArmoryDoor",
-							"sid": 926308320152954,
-							"parameters": {
-								"instance-variable": "isLocked",
-								"value": "false"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "ArmoryKey",
-							"sid": 606776454962361
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 947294545923819,
-							"parameters": {
-								"layout": "Armory"
-							}
-						}
-					],
-					"sid": 765924338764673
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
 					"sid": 157835632003000,
 					"parameters": {
 						"object": "DormDoor"
@@ -127,39 +197,6 @@
 				}
 			],
 			"sid": 495366164511888
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 451750210247137,
-					"parameters": {
-						"object": "GeneratorDoor"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "GeneratorDoor",
-					"sid": 659176670983228,
-					"parameters": {
-						"instance-variable": "isLocked"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 897541887923707,
-					"parameters": {
-						"layout": "Generator"
-					}
-				}
-			],
-			"sid": 959393228959244
 		},
 		{
 			"eventType": "block",
