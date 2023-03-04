@@ -43,6 +43,14 @@
 					"parameters": {
 						"object": "LightSwitch"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 159185733961658,
+					"parameters": {
+						"variable": "isPowerOn"
+					}
 				}
 			],
 			"actions": [],
