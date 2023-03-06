@@ -50,6 +50,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 130338342548594
+		},
+		{
+			"eventType": "variable",
+			"name": "hasKeycardTerminal",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 741931467801711
 		}
 	],
 	"sid": 500448979529222

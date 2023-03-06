@@ -143,6 +143,23 @@
 									"parameters": [
 										"\"Safe unlocked.\""
 									]
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Safe",
+									"sid": 313873484607443,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Terminal_Key",
+									"sid": 585977032901494,
+									"parameters": {
+										"x": "288",
+										"y": "384"
+									}
 								}
 							],
 							"sid": 282445459587428
@@ -151,9 +168,13 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "else",
+									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 450421607082995
+									"sid": 772596096371824,
+									"parameters": {
+										"variable": "hasKeyCardSafe"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -259,6 +280,44 @@
 					"sid": 382460687311673
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 556326290927079,
+					"parameters": {
+						"object": "Terminal_Key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Terminal_Key",
+					"sid": 611084013329428
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Keycard1",
+					"sid": 273572861101876,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 713621504102697,
+					"parameters": {
+						"variable": "hasKeycardTerminal",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 673653299968106
 		}
 	],
 	"sid": 590733969866321

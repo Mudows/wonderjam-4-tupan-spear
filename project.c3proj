@@ -98,7 +98,8 @@
 			{
 				"items": [
 					"Computer",
-					"Safe"
+					"Safe",
+					"Terminal_Key"
 				],
 				"subfolders": [],
 				"name": "Office"
