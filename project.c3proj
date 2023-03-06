@@ -151,7 +151,8 @@
 							"Panel_Txt",
 							"Armory_Btn",
 							"Dorm_Btn",
-							"Office_Btn"
+							"Office_Btn",
+							"OK"
 						],
 						"subfolders": [],
 						"name": "Panel"
@@ -173,6 +174,7 @@
 		{
 			"members": [
 				"Armory_Btn",
+				"OK",
 				"Dorm_Btn",
 				"Office_Btn",
 				"Panel_Background",

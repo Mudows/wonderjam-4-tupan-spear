@@ -242,33 +242,6 @@
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 105524133144607,
-					"parameters": {
-						"layer": "\"Panel\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-interactive",
-					"objectClass": "System",
-					"sid": 152953048708065,
-					"parameters": {
-						"layer": "\"Panel\"",
-						"interactive": false
-					}
-				},
-				{
-					"id": "set-layer-interactive",
-					"objectClass": "System",
-					"sid": 969420040552936,
-					"parameters": {
-						"layer": "\"Game\"",
-						"interactive": true
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 635981640126405,
@@ -425,6 +398,46 @@
 				}
 			],
 			"sid": 157433783765535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "OK",
+					"sid": 651814902022250
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 121023951990906,
+					"parameters": {
+						"layer": "\"Panel\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 762292859746701,
+					"parameters": {
+						"layer": "\"Panel\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 927128232975770,
+					"parameters": {
+						"layer": "\"Game\"",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 883098998428163
 		}
 	],
 	"sid": 230001874516863

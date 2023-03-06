@@ -112,7 +112,7 @@
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"isLocked": true
+						"isLocked": false
 					},
 					"behaviors": {},
 					"world": {

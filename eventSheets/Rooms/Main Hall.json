@@ -20,6 +20,44 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 621403259599714,
+							"parameters": {
+								"variable": "hasArmoryKey"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ArmoryDoor",
+							"sid": 116457743380674,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ArmoryKey",
+							"sid": 340776893199908
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 771563606624196,
+							"parameters": {
+								"layout": "Armory"
+							}
+						}
+					],
+					"sid": 880658530399674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "ArmoryDoor",
 							"sid": 218984410756650,
@@ -38,44 +76,6 @@
 						}
 					],
 					"sid": 658245239345110
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 334045316635555,
-							"parameters": {
-								"variable": "hasArmoryKey"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "ArmoryDoor",
-							"sid": 206451137003215,
-							"parameters": {
-								"instance-variable": "isLocked",
-								"value": "false"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "ArmoryKey",
-							"sid": 720904112524124
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 727815546838166,
-							"parameters": {
-								"layout": "Armory"
-							}
-						}
-					],
-					"sid": 674524592534505
 				}
 			]
 		},
@@ -98,6 +98,44 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 401896235002114,
+							"parameters": {
+								"variable": "hasAxe"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "GeneratorDoor",
+							"sid": 129108573248881,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Axe",
+							"sid": 775225076481080
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 103493489595891,
+							"parameters": {
+								"layout": "Generator"
+							}
+						}
+					],
+					"sid": 777397110280085
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "GeneratorDoor",
 							"sid": 890068906865495,
@@ -116,44 +154,6 @@
 						}
 					],
 					"sid": 866458433614281
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 446377641298024,
-							"parameters": {
-								"variable": "hasAxe"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "GeneratorDoor",
-							"sid": 798476136208905,
-							"parameters": {
-								"instance-variable": "isLocked",
-								"value": "false"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Axe",
-							"sid": 797072578135819
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 499547972262042,
-							"parameters": {
-								"layout": "Generator"
-							}
-						}
-					],
-					"sid": 157053360266388
 				}
 			]
 		},
@@ -224,15 +224,6 @@
 					"parameters": {
 						"object": "OfficeDoor"
 					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "OfficeDoor",
-					"sid": 657972903644351,
-					"parameters": {
-						"instance-variable": "isLocked"
-					},
-					"isInverted": true
 				}
 			],
 			"actions": [
