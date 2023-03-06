@@ -9,14 +9,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 275467446617897,
-					"parameters": {
-						"object": "LightSwitch"
-					}
-				},
-				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 845860336467780,
@@ -34,48 +26,237 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 892754434028340,
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 636042894532995,
 							"parameters": {
-								"layer": "\"Light\""
+								"object": "LightSwitch"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 244478698981914,
+					"children": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 462027458053187,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 793549824835677,
+									"parameters": {
+										"layer": "\"Light\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 880210642046345,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 247355315163436
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 251362178598518
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 822551481033918,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 976699439358316
 						}
-					],
-					"sid": 343171022581545
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 347880315732231
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 913878620394719,
+							"parameters": {
+								"object": "Computer"
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 673985926154514,
+							"callFunction": "ShowText",
+							"sid": 618994557102860,
+							"parameters": [
+								"\"This is a message.\""
+							]
+						}
+					],
+					"sid": 686717409985660
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 137492475930710,
 							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "visible"
+								"object": "Safe"
 							}
 						}
 					],
-					"sid": 595305159419522
+					"actions": [],
+					"sid": 434049787611882,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 602866939483241,
+									"parameters": {
+										"variable": "hasKeyCardSafe"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "ShowText",
+									"sid": 662119236308241,
+									"parameters": [
+										"\"Safe unlocked.\""
+									]
+								}
+							],
+							"sid": 282445459587428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 450421607082995
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "ShowText",
+									"sid": 400452782770131,
+									"parameters": [
+										"\"Needs a keycard to unlock.\""
+									]
+								}
+							],
+							"sid": 218795568996946
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 115359398664244,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Office\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 501702452562670,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 792039013337094,
+							"parameters": {
+								"object": "LightSwitch"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 927880792539277,
+							"parameters": [
+								"\"Not working. Needs power.\""
+							]
+						}
+					],
+					"sid": 902872954828444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 396315634799800,
+							"parameters": {
+								"object": "Computer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 585409660157360,
+							"parameters": [
+								"\"Needs power to use. I hope there is a good game in this.\""
+							]
+						}
+					],
+					"sid": 181686698573517
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 386459211391679,
+							"parameters": {
+								"object": "Safe"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 343075888776354,
+							"parameters": [
+								"\"It's a electronic lock. Needs power and a keycard to unlock.\""
+							]
+						}
+					],
+					"sid": 382460687311673
 				}
 			]
 		}

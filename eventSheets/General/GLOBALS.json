@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "hasKeyCard2",
+			"name": "hasKeyCardSafe",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
@@ -45,7 +45,7 @@
 			"eventType": "variable",
 			"name": "roomWithPower",
 			"type": "string",
-			"initialValue": "",
+			"initialValue": "Power Off",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

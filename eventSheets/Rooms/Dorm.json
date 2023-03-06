@@ -147,7 +147,7 @@
 					"objectClass": "System",
 					"sid": 563819333593650,
 					"parameters": {
-						"variable": "hasKeyCard2",
+						"variable": "hasKeyCardSafe",
 						"value": "true"
 					}
 				},
