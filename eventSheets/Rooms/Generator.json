@@ -93,6 +93,15 @@
 								"layer": "\"Panel\"",
 								"interactive": true
 							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 381080390686371,
+							"parameters": {
+								"layer": "\"Game\"",
+								"interactive": false
+							}
 						}
 					],
 					"sid": 528404067056793
@@ -176,6 +185,15 @@
 					"parameters": {
 						"layer": "\"Panel\"",
 						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 969420040552936,
+					"parameters": {
+						"layer": "\"Game\"",
+						"interactive": true
 					}
 				}
 			],
