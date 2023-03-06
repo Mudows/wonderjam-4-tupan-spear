@@ -1,0 +1,22 @@
+{
+	"name": "Interactive",
+	"plugin-id": "Sprite",
+	"sid": 157675408264105,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ArmoryDoor",
+		"DormDoor",
+		"GeneratorDoor",
+		"Generator",
+		"FireAxeBox",
+		"HandWithKey",
+		"MainHallDoor",
+		"OfficeDoor",
+		"TerminalDoor",
+		"Safe",
+		"LightSwitch",
+		"Computer"
+	]
+}

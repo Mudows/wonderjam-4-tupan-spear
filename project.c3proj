@@ -181,7 +181,9 @@
 		}
 	],
 	"families": {
-		"items": [],
+		"items": [
+			"Interactive"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -380,5 +382,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": null
+	"firstLayout": "Main Hall"
 }
