@@ -21,6 +21,24 @@
 			"conditions": [],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "PromptText",
+					"sid": 927741518431834
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 293282703047338,
+					"parameters": {
+						"object-to-create": "PromptText",
+						"layer": "\"UI\"",
+						"x": "352",
+						"y": "320",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
 					"id": "typewriter-text",
 					"objectClass": "PromptText",
 					"sid": 891508456669773,
@@ -52,6 +70,11 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PromptText",
+					"sid": 291890516436609
 				}
 			],
 			"sid": 824606499448608

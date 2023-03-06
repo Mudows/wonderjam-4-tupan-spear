@@ -107,6 +107,55 @@
 					"disabled": true
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 404215451119104,
+					"parameters": {
+						"object": "Interactive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 156731126345709,
+					"parameters": {
+						"cursor-style": "hand"
+					}
+				}
+			],
+			"sid": 336991795401564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 929482234237825,
+					"parameters": {
+						"object": "Interactive"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 939042694026774,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 345891477306136
 		}
 	],
 	"sid": 982320429138788

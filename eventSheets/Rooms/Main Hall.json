@@ -2,6 +2,10 @@
 	"name": "Main Hall",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "COMMON"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
