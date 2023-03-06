@@ -17,35 +17,297 @@
 					}
 				}
 			],
+			"actions": [],
+			"sid": 599615003039014,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 783264646637762,
+							"parameters": {
+								"variable": "isPowerOn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 573492468813801,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 647612919919816,
+							"parameters": {
+								"variable": "isPowerOn",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 776321701559008,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 884864294550762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 365343430380893,
+							"parameters": {
+								"variable": "isPowerOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 134597889062906,
+							"parameters": {
+								"layer": "\"Panel\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 328920189416398,
+							"parameters": {
+								"layer": "\"Panel\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 528404067056793
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Armory_Btn",
+					"sid": 487514937389760
+				}
+			],
 			"actions": [
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 596031797922308,
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 681912845081318,
 					"parameters": {
-						"seconds": "0.5"
+						"mode": "disabled"
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 501445532291408,
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 219184317073007,
 					"parameters": {
-						"variable": "isPowerOn",
-						"value": "true"
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 661706840028660,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 320799899127454,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 722167572045123,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 478875625208522,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
 					}
 				},
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 414577240961002,
+					"sid": 105524133144607,
 					"parameters": {
-						"layer": "\"Light\"",
+						"layer": "\"Panel\"",
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 152953048708065,
+					"parameters": {
+						"layer": "\"Panel\"",
+						"interactive": false
 					}
 				}
 			],
-			"sid": 599615003039014
+			"sid": 414894795259567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Dorm_Btn",
+					"sid": 997465757856934
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 379314268894055,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 642568445629404,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 725480869581485,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 489405642086351,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 475834188561584,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 732998831257434,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				}
+			],
+			"sid": 636961622489846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Office_Btn",
+					"sid": 846410563062242
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 465053670614731,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 253894901808093,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 449935991929483,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 172429191655167,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 707843581657526,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 685988104904830,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				}
+			],
+			"sid": 157433783765535
 		}
 	],
 	"sid": 230001874516863

@@ -270,11 +270,45 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 515718602527958,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.19215686274509805,
+				0.20784313725490197,
+				0.25098039215686274,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Panel",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "Panel_Background",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -319,7 +353,7 @@
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
 						"wrapping": "word",
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -349,7 +383,7 @@
 						"type": "button",
 						"text": "Armory",
 						"tooltip": "",
-						"initially-visible": false,
+						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
@@ -380,7 +414,7 @@
 						"type": "button",
 						"text": "Dorm",
 						"tooltip": "",
-						"initially-visible": false,
+						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
@@ -411,7 +445,7 @@
 						"type": "button",
 						"text": "Office",
 						"tooltip": "",
-						"initially-visible": false,
+						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
@@ -437,10 +471,10 @@
 					}
 				}
 			],
-			"sid": 515718602527958,
+			"sid": 160287617115571,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": false,
 			"color": [
 				1,
 				1,
