@@ -4,6 +4,440 @@
 		{
 			"eventType": "include",
 			"includeSheet": "COMMON"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 806474317693682,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 317694872986164,
+					"parameters": {
+						"variable": "isPowerOn"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 740599664952821,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 912874421219174,
+							"parameters": {
+								"layer": "\"Light\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 784770225403044,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 931152957534117
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 424683400429922
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 406085886313633,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 523239566476011
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 420328219639329,
+					"parameters": {
+						"object": "Generator"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 599615003039014,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 783264646637762,
+							"parameters": {
+								"variable": "isPowerOn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 573492468813801,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 647612919919816,
+							"parameters": {
+								"variable": "isPowerOn",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 776321701559008,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 884864294550762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 365343430380893,
+							"parameters": {
+								"variable": "isPowerOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 134597889062906,
+							"parameters": {
+								"layer": "\"Panel\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 328920189416398,
+							"parameters": {
+								"layer": "\"Panel\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 381080390686371,
+							"parameters": {
+								"layer": "\"Game\"",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 528404067056793
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Armory_Btn",
+					"sid": 487514937389760
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 681912845081318,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 219184317073007,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 661706840028660,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 320799899127454,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 722167572045123,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 478875625208522,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 635981640126405,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Armory\""
+					}
+				}
+			],
+			"sid": 414894795259567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Dorm_Btn",
+					"sid": 997465757856934
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 379314268894055,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 642568445629404,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 725480869581485,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 489405642086351,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 475834188561584,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 732998831257434,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 343413851125772,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Dorm\""
+					}
+				}
+			],
+			"sid": 636961622489846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Office_Btn",
+					"sid": 846410563062242
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Office_Btn",
+					"sid": 465053670614731,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Armory_Btn",
+					"sid": 253894901808093,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Dorm_Btn",
+					"sid": 449935991929483,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Office_Btn",
+					"sid": 172429191655167,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"green\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Dorm_Btn",
+					"sid": 707843581657526,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Armory_Btn",
+					"sid": 685988104904830,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 888642924691126,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Office\""
+					}
+				}
+			],
+			"sid": 157433783765535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "OK",
+					"sid": 651814902022250
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 121023951990906,
+					"parameters": {
+						"layer": "\"Panel\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 762292859746701,
+					"parameters": {
+						"layer": "\"Panel\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 927128232975770,
+					"parameters": {
+						"layer": "\"Game\"",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 883098998428163
 		}
 	],
 	"sid": 230001874516863

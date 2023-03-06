@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -65,12 +72,7 @@
 	],
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
-		"items": [
-			"Label",
-			"LightSwitch",
-			"DoorLight",
-			"FireAxeEmergencyLight"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -100,10 +102,13 @@
 			},
 			{
 				"items": [
-					"MainHallDoor"
+					"MainHallDoor",
+					"DoorLight",
+					"Label",
+					"LightSwitch"
 				],
 				"subfolders": [],
-				"name": "Common"
+				"name": "COMMON"
 			},
 			{
 				"items": [
@@ -128,15 +133,56 @@
 			},
 			{
 				"items": [
-					"FireAxeBox"
+					"FireAxeBox",
+					"FireAxeEmergencyLight"
 				],
 				"subfolders": [],
 				"name": "Armory"
+			},
+			{
+				"items": [
+					"DoorLight_HalfCircle",
+					"Generator"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Panel_Background",
+							"Panel_Txt",
+							"Armory_Btn",
+							"Dorm_Btn",
+							"Office_Btn",
+							"OK"
+						],
+						"subfolders": [],
+						"name": "Panel"
+					}
+				],
+				"name": "Generator"
+			},
+			{
+				"items": [
+					"PromptText"
+				],
+				"subfolders": [],
+				"name": "UI"
 			}
 		]
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"Armory_Btn",
+				"OK",
+				"Dorm_Btn",
+				"Office_Btn",
+				"Panel_Background",
+				"Panel_Txt"
+			],
+			"selectMode": "normal"
+		}
+	],
 	"families": {
 		"items": [],
 		"subfolders": []
@@ -293,7 +339,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "low",
 		"viewportFit": "auto",
 		"backgroundColor": [

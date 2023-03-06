@@ -1,5 +1,61 @@
 {
 	"name": "FUNCTIONS",
-	"events": [],
+	"events": [
+		{
+			"functionName": "ShowText",
+			"functionDescription": "Prompt a feedback message of the current action performed by the player.",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Text",
+					"type": "string",
+					"initialValue": "This is a message.",
+					"comment": "",
+					"sid": 933108149409272
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "PromptText",
+					"sid": 891508456669773,
+					"parameters": {
+						"text": "Text",
+						"duration": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PromptText",
+					"sid": 102337259420866,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 601819021653676,
+					"parameters": {
+						"seconds": "2.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PromptText",
+					"sid": 180531165261764,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 824606499448608
+		}
+	],
 	"sid": 579075728917021
 }

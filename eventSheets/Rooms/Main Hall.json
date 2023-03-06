@@ -7,6 +7,162 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 399614635932620,
+					"parameters": {
+						"object": "ArmoryDoor"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 189339753762665,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 621403259599714,
+							"parameters": {
+								"variable": "hasArmoryKey"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ArmoryDoor",
+							"sid": 116457743380674,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ArmoryKey",
+							"sid": 340776893199908
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 771563606624196,
+							"parameters": {
+								"layout": "Armory"
+							}
+						}
+					],
+					"sid": 880658530399674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ArmoryDoor",
+							"sid": 218984410756650,
+							"parameters": {
+								"instance-variable": "isLocked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 786031567808185,
+							"parameters": [
+								"\"This door is locked. Maybe the key is somewhere else?\""
+							]
+						}
+					],
+					"sid": 658245239345110
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 343614140364289,
+					"parameters": {
+						"object": "GeneratorDoor"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 929276515183837,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 401896235002114,
+							"parameters": {
+								"variable": "hasAxe"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "GeneratorDoor",
+							"sid": 129108573248881,
+							"parameters": {
+								"instance-variable": "isLocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Axe",
+							"sid": 775225076481080
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 103493489595891,
+							"parameters": {
+								"layout": "Generator"
+							}
+						}
+					],
+					"sid": 777397110280085
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "GeneratorDoor",
+							"sid": 890068906865495,
+							"parameters": {
+								"instance-variable": "isLocked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 559546799530654,
+							"parameters": [
+								"\"Can't go trough. I need something to cut these roots.\""
+							]
+						}
+					],
+					"sid": 866458433614281
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 918134481870458,
 					"parameters": {
 						"object": "TerminalDoor"
@@ -40,103 +196,6 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 560688159517556,
-					"parameters": {
-						"object": "ArmoryDoor"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 871245374881376,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "ArmoryDoor",
-							"sid": 468776016823823,
-							"parameters": {
-								"instance-variable": "isLocked"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 309415832935558
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 341312918412866,
-							"parameters": {
-								"variable": "hasArmoryKey"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "ArmoryDoor",
-							"sid": 926308320152954,
-							"parameters": {
-								"instance-variable": "isLocked",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 282430433218582,
-							"disabled": true,
-							"parameters": {
-								"variable": "hasArmoryKey",
-								"value": "false"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "ArmoryKey",
-							"sid": 606776454962361
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 947294545923819,
-							"parameters": {
-								"layout": "Armory"
-							}
-						}
-					],
-					"sid": 765924338764673
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "ArmoryDoor",
-							"sid": 252627802079017,
-							"parameters": {
-								"instance-variable": "isLocked"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 971679386467986,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
 					"sid": 157835632003000,
 					"parameters": {
 						"object": "DormDoor"
@@ -161,52 +220,10 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 451750210247137,
-					"parameters": {
-						"object": "GeneratorDoor"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "GeneratorDoor",
-					"sid": 659176670983228,
-					"parameters": {
-						"instance-variable": "isLocked"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 897541887923707,
-					"parameters": {
-						"layout": "Generator"
-					}
-				}
-			],
-			"sid": 959393228959244
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
 					"sid": 292254758884124,
 					"parameters": {
 						"object": "OfficeDoor"
 					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "OfficeDoor",
-					"sid": 657972903644351,
-					"parameters": {
-						"instance-variable": "isLocked"
-					},
-					"isInverted": true
 				}
 			],
 			"actions": [
