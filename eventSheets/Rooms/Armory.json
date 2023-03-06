@@ -73,6 +73,80 @@
 				}
 			],
 			"sid": 403856900128532
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 756407357386021,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 433034645003869,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Armory\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 259241715191344,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 605797359632315,
+							"parameters": {
+								"layer": "\"Light\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 189712872829191,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 411456189590803
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 657837731965308
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 519803409571861,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 188804556235752
+				}
+			]
 		}
 	],
 	"sid": 972516201963156

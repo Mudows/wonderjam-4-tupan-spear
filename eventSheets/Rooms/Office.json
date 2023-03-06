@@ -4,6 +4,80 @@
 		{
 			"eventType": "include",
 			"includeSheet": "COMMON"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 275467446617897,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 845860336467780,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Office\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 126310731526600,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 892754434028340,
+							"parameters": {
+								"layer": "\"Light\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 462027458053187,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 343171022581545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 347880315732231
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 673985926154514,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 595305159419522
+				}
+			]
 		}
 	],
 	"sid": 590733969866321

@@ -11,6 +11,78 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 806474317693682,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 317694872986164,
+					"parameters": {
+						"variable": "isPowerOn"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 740599664952821,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 912874421219174,
+							"parameters": {
+								"layer": "\"Light\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 784770225403044,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 931152957534117
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 424683400429922
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 406085886313633,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 523239566476011
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 420328219639329,
 					"parameters": {
 						"object": "Generator"
@@ -195,6 +267,15 @@
 						"layer": "\"Game\"",
 						"interactive": true
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 635981640126405,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Armory\""
+					}
 				}
 			],
 			"sid": 414894795259567
@@ -259,6 +340,15 @@
 						"property-name": "\"background-color\"",
 						"value": "\"red\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 343413851125772,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Dorm\""
+					}
 				}
 			],
 			"sid": 636961622489846
@@ -322,6 +412,15 @@
 					"parameters": {
 						"property-name": "\"background-color\"",
 						"value": "\"red\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 888642924691126,
+					"parameters": {
+						"variable": "roomWithPower",
+						"value": "\"Office\""
 					}
 				}
 			],
