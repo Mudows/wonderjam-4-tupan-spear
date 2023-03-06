@@ -1,7 +1,7 @@
 {
-	"name": "Keycard2",
+	"name": "Keycard1",
 	"plugin-id": "Sprite",
-	"sid": 274145763960609,
+	"sid": 221628444612139,
 	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9575065,
+						"imageSpriteId": 4283107,
 						"collisionPoly": {
 							"points": [
 								0.171875,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 941421782437834,
+				"sid": 832188561838194,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

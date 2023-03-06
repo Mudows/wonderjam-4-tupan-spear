@@ -28,7 +28,15 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 786031567808185,
+							"parameters": [
+								"\"This door is locked. Maybe the key is somewhere else?\""
+							]
+						}
+					],
 					"sid": 658245239345110
 				},
 				{
@@ -98,7 +106,15 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 559546799530654,
+							"parameters": [
+								"\"Can't go trough. I need something to cut these roots.\""
+							]
+						}
+					],
 					"sid": 866458433614281
 				},
 				{

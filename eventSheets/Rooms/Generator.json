@@ -34,6 +34,15 @@
 						"variable": "isPowerOn",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 414577240961002,
+					"parameters": {
+						"layer": "\"Light\"",
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 599615003039014

@@ -1,8 +1,8 @@
 {
-	"name": "Keycard2",
+	"name": "KeycardLvl2",
 	"plugin-id": "Sprite",
-	"sid": 274145763960609,
-	"isGlobal": true,
+	"sid": 154467802699721,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
@@ -11,39 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 16,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9575065,
-						"collisionPoly": {
-							"points": [
-								0.171875,
-								0.171875,
-								0.5,
-								0.171875,
-								0.828125,
-								0.171875,
-								0.953125,
-								0.5,
-								0.859375,
-								0.859375,
-								0.5,
-								0.859375,
-								0.140625,
-								0.859375,
-								0.046875,
-								0.5
-							]
-						},
+						"imageSpriteId": 9274525,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 941421782437834,
+				"sid": 968047125978410,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -139,6 +139,13 @@
 				],
 				"subfolders": [],
 				"name": "Generator"
+			},
+			{
+				"items": [
+					"PromptText"
+				],
+				"subfolders": [],
+				"name": "UI"
 			}
 		]
 	},
