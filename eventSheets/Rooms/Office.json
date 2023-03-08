@@ -119,6 +119,15 @@
 							"parameters": {
 								"object": "Safe"
 							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Safe",
+							"sid": 798413078693545,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
 						}
 					],
 					"actions": [],
@@ -160,6 +169,11 @@
 										"x": "288",
 										"y": "384"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Keycard2",
+									"sid": 156668436755875
 								}
 							],
 							"sid": 282445459587428
@@ -318,6 +332,39 @@
 				}
 			],
 			"sid": 673653299968106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 348947911109808
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 172987016949967,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Office\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 553269219915369,
+					"parameters": {
+						"layer": "\"Light\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 707983310937915
 		}
 	],
 	"sid": 590733969866321
