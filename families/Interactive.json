@@ -17,6 +17,7 @@
 		"TerminalDoor",
 		"Safe",
 		"LightSwitch",
-		"Computer"
+		"Computer",
+		"KeycardLvl2"
 	]
 }

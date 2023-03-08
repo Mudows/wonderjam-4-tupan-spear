@@ -15,6 +15,13 @@
 					"initialValue": "This is a message.",
 					"comment": "",
 					"sid": 933108149409272
+				},
+				{
+					"name": "displayTime",
+					"type": "number",
+					"initialValue": "2",
+					"comment": "",
+					"sid": 572538749280163
 				}
 			],
 			"eventType": "function-block",
@@ -58,9 +65,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 601819021653676,
+					"sid": 282917646816494,
 					"parameters": {
-						"seconds": "2.0"
+						"seconds": "displayTime"
 					}
 				},
 				{
