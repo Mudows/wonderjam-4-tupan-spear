@@ -147,7 +147,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
+						"x": 1120,
 						"y": 192,
 						"width": 150,
 						"height": 300,
@@ -178,55 +178,12 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
+						"x": 1120,
 						"y": 512,
 						"width": 150,
 						"height": 300,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Label",
-					"properties": {
-						"text": "Main Hall",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 11,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 460,
-						"y": 541,
-						"width": 337,
-						"height": 101,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -321,8 +278,8 @@
 						}
 					},
 					"world": {
-						"x": 1216,
-						"y": 64,
+						"x": 352,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -350,8 +307,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 256,
+						"x": 544,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -379,8 +336,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 160,
+						"x": 448,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -408,8 +365,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 352,
+						"x": 640,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -437,8 +394,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 448,
+						"x": 736,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -466,8 +423,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 640,
+						"x": 928,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -495,8 +452,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 544,
+						"x": 832,
+						"y": 672,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -542,6 +499,49 @@
 						"y": 320,
 						"width": 576,
 						"height": 128,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Label",
+					"properties": {
+						"text": "Main Hall",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 30,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 460,
+						"y": 541,
+						"width": 337,
+						"height": 101,
 						"originX": 0,
 						"originY": 0,
 						"color": [
