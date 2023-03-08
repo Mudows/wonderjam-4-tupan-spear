@@ -101,9 +101,9 @@
 					"actions": [
 						{
 							"callFunction": "ShowText",
-							"sid": 324991217796264,
+							"sid": 865625045942029,
 							"parameters": [
-								"\"The file about the terminal is corrupted. I can figure out just part of the password: 3XK.\"",
+								"\"The file about the terminal is corrupted. I can figure out just part of the password: 3XC.\"",
 								"4"
 							]
 						},

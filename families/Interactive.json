@@ -18,6 +18,14 @@
 		"Safe",
 		"LightSwitch",
 		"Computer",
-		"KeycardLvl2"
+		"KeycardLvl2",
+		"ArmoryKey",
+		"Axe",
+		"Keycard2",
+		"Keycard1",
+		"PasswordPart_B",
+		"PasswordPart_A",
+		"PasswordPart_C",
+		"Terminal_Key"
 	]
 }

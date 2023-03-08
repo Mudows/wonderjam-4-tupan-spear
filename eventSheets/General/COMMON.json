@@ -30,85 +30,6 @@
 			"sid": 841106342301587
 		},
 		{
-			"eventType": "comment",
-			"text": "Light switch control"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 448964847837763,
-					"parameters": {
-						"object": "LightSwitch"
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 159185733961658,
-					"parameters": {
-						"variable": "isPowerOn"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 529490063404691,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 775588582362633,
-							"parameters": {
-								"layer": "\"Light\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 103932950143818,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 813391647952375,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 332121297786479
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 355668295390687,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 423741265264379,
-					"disabled": true
-				}
-			]
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -118,6 +39,11 @@
 					"parameters": {
 						"object": "Interactive"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Interactive",
+					"sid": 270723952744282
 				}
 			],
 			"actions": [
@@ -156,6 +82,227 @@
 				}
 			],
 			"sid": 345891477306136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 280237881853285,
+					"parameters": {
+						"object": "ArmoryKey"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "ArmoryKey",
+					"sid": 131316133016918
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 149533026624020,
+					"parameters": [
+						"\"A simple key.\"",
+						"2"
+					]
+				}
+			],
+			"sid": 818001841836744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 625444336785211,
+					"parameters": {
+						"object": "Axe"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Axe",
+					"sid": 810713494852492
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 538780224416970,
+					"parameters": [
+						"\"A fire axe, for emergencies. Still sharp.\"",
+						"3"
+					]
+				}
+			],
+			"sid": 632088341071603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 299758773629685,
+					"parameters": {
+						"object": "Keycard2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Keycard2",
+					"sid": 240802433387714
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 512823524210562,
+					"parameters": [
+						"\"An employee access card.\"",
+						"3"
+					]
+				}
+			],
+			"sid": 668482318216801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 240609028271632,
+					"parameters": {
+						"object": "Keycard1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Keycard1",
+					"sid": 167329835984606
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 787875369478850,
+					"parameters": [
+						"\"A high level security access card.\"",
+						"3"
+					]
+				}
+			],
+			"sid": 750642031816016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 885402793646282,
+					"parameters": {
+						"object": "PasswordPart_A"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "PasswordPart_A",
+					"sid": 527976044408949
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 774217244972693,
+					"parameters": [
+						"\"Part of the password I got before I got into this place: 8UR\"",
+						"4"
+					]
+				}
+			],
+			"sid": 529727427432036
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 963490341009516,
+					"parameters": {
+						"object": "PasswordPart_B"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "PasswordPart_B",
+					"sid": 757703249430155
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 467256490658319,
+					"parameters": [
+						"\"Another part of the password. 3XC\"",
+						"3"
+					]
+				}
+			],
+			"sid": 380441511494989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 190932605738467,
+					"parameters": {
+						"object": "PasswordPart_C"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "PasswordPart_C",
+					"sid": 563364705080970
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowText",
+					"sid": 893559340824626,
+					"parameters": [
+						"\"Last part of the password: 4L1\"",
+						"3"
+					]
+				}
+			],
+			"sid": 442364691454142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 754616932758865
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PromptText",
+					"sid": 706796780062034
+				}
+			],
+			"sid": 348846689599345
 		}
 	],
 	"sid": 982320429138788
