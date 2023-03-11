@@ -147,7 +147,7 @@
 					"objectClass": "System",
 					"sid": 563819333593650,
 					"parameters": {
-						"variable": "hasKeyCard2",
+						"variable": "hasKeyCardSafe",
 						"value": "true"
 					}
 				},
@@ -235,6 +235,39 @@
 					"sid": 363127727237796
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 459467833193034
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 710208638885305,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Dorm\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 710853656184460,
+					"parameters": {
+						"layer": "\"Light\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 450512893206892
 		}
 	],
 	"sid": 555515558670645

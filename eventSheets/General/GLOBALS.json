@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "hasKeyCard2",
+			"name": "hasKeyCardSafe",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
@@ -45,11 +45,21 @@
 			"eventType": "variable",
 			"name": "roomWithPower",
 			"type": "string",
-			"initialValue": "",
+			"initialValue": "Armory",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 130338342548594
+		},
+		{
+			"eventType": "variable",
+			"name": "hasKeycardTerminal",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 741931467801711
 		}
 	],
 	"sid": 500448979529222

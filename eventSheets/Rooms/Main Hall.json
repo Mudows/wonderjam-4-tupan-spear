@@ -2,6 +2,10 @@
 	"name": "Main Hall",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "COMMON"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -71,7 +75,8 @@
 							"callFunction": "ShowText",
 							"sid": 786031567808185,
 							"parameters": [
-								"\"This door is locked. Maybe the key is somewhere else?\""
+								"\"This door is locked. Maybe the key is somewhere else?\"",
+								"2"
 							]
 						}
 					],
@@ -149,7 +154,8 @@
 							"callFunction": "ShowText",
 							"sid": 559546799530654,
 							"parameters": [
-								"\"Can't go trough. I need something to cut these roots.\""
+								"\"Can't go trough. I need something to cut these roots.\"",
+								"2"
 							]
 						}
 					],

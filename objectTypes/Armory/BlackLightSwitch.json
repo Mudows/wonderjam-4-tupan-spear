@@ -1,0 +1,45 @@
+{
+	"name": "BlackLightSwitch",
+	"plugin-id": "Sprite",
+	"sid": 114092929951300,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isOn",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 487666523810883
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3599877,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 736222268869962,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
