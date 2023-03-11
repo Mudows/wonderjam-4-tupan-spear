@@ -1,0 +1,17 @@
+{
+	"name": "UI_Itens",
+	"plugin-id": "Sprite",
+	"sid": 958304585217157,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ArmoryKey",
+		"Axe",
+		"Keycard2",
+		"Keycard1",
+		"PasswordPart_A",
+		"PasswordPart_C",
+		"PasswordPart_B"
+	]
+}

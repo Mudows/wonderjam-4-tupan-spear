@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32702,
+	"savedWithRelease": 32703,
 	"name": "Tupã's Spear",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -96,7 +96,11 @@
 				"name": "Main Hall"
 			},
 			{
-				"items": [],
+				"items": [
+					"Computer",
+					"Safe",
+					"Terminal_Key"
+				],
 				"subfolders": [],
 				"name": "Office"
 			},
@@ -105,7 +109,8 @@
 					"MainHallDoor",
 					"DoorLight",
 					"Label",
-					"LightSwitch"
+					"LightSwitch",
+					"DoorLight_HalfCircle"
 				],
 				"subfolders": [],
 				"name": "COMMON"
@@ -126,7 +131,8 @@
 					"Keycard1",
 					"PasswordPart_A",
 					"PasswordPart_B",
-					"PasswordPart_C"
+					"PasswordPart_C",
+					"PromptText"
 				],
 				"subfolders": [],
 				"name": "UI Itens"
@@ -141,7 +147,6 @@
 			},
 			{
 				"items": [
-					"DoorLight_HalfCircle",
 					"Generator"
 				],
 				"subfolders": [
@@ -159,13 +164,6 @@
 					}
 				],
 				"name": "Generator"
-			},
-			{
-				"items": [
-					"PromptText"
-				],
-				"subfolders": [],
-				"name": "UI"
 			}
 		]
 	},
@@ -174,9 +172,9 @@
 		{
 			"members": [
 				"Armory_Btn",
-				"OK",
 				"Dorm_Btn",
 				"Office_Btn",
+				"OK",
 				"Panel_Background",
 				"Panel_Txt"
 			],
@@ -184,7 +182,10 @@
 		}
 	],
 	"families": {
-		"items": [],
+		"items": [
+			"Interactive",
+			"UI_Itens"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -383,5 +384,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": null
+	"firstLayout": "Main Hall"
 }

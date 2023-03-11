@@ -147,6 +147,39 @@
 					"sid": 188804556235752
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 843787474565215
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 357287331683428,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Armory\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 319162560875798,
+					"parameters": {
+						"layer": "\"Light\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 837014641555719
 		}
 	],
 	"sid": 972516201963156

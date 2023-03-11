@@ -9,14 +9,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 275467446617897,
-					"parameters": {
-						"object": "LightSwitch"
-					}
-				},
-				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 845860336467780,
@@ -34,50 +26,336 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 892754434028340,
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 636042894532995,
 							"parameters": {
-								"layer": "\"Light\""
+								"object": "LightSwitch"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 244478698981914,
+					"children": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 462027458053187,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 793549824835677,
+									"parameters": {
+										"layer": "\"Light\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 880210642046345,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 247355315163436
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 251362178598518
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 822551481033918,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 976699439358316
 						}
-					],
-					"sid": 343171022581545
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 347880315732231
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 913878620394719,
+							"parameters": {
+								"object": "Computer"
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 673985926154514,
+							"callFunction": "ShowText",
+							"sid": 865625045942029,
+							"parameters": [
+								"\"The file about the terminal is corrupted. I can figure out just part of the password: 3XC.\"",
+								"4"
+							]
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PasswordPart_B",
+							"sid": 581647133059300,
 							"parameters": {
-								"layer": "\"Light\"",
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 595305159419522
+					"sid": 686717409985660
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 137492475930710,
+							"parameters": {
+								"object": "Safe"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Safe",
+							"sid": 798413078693545,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 434049787611882,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 602866939483241,
+									"parameters": {
+										"variable": "hasKeyCardSafe"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "ShowText",
+									"sid": 662119236308241,
+									"parameters": [
+										"\"Safe unlocked.\"",
+										"2"
+									]
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Safe",
+									"sid": 313873484607443,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Terminal_Key",
+									"sid": 585977032901494,
+									"parameters": {
+										"x": "288",
+										"y": "384"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Keycard2",
+									"sid": 156668436755875
+								}
+							],
+							"sid": 282445459587428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 772596096371824,
+									"parameters": {
+										"variable": "hasKeyCardSafe"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "ShowText",
+									"sid": 400452782770131,
+									"parameters": [
+										"\"Needs a keycard to unlock.\"",
+										"2"
+									]
+								}
+							],
+							"sid": 218795568996946
+						}
+					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 115359398664244,
+					"parameters": {
+						"variable": "roomWithPower",
+						"comparison": 0,
+						"value": "\"Office\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 127367305597345,
+					"parameters": {
+						"layer": "\"Light\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 501702452562670,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 792039013337094,
+							"parameters": {
+								"object": "LightSwitch"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 927880792539277,
+							"parameters": [
+								"\"Not working. Needs power.\"",
+								"2"
+							]
+						}
+					],
+					"sid": 902872954828444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 396315634799800,
+							"parameters": {
+								"object": "Computer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 585409660157360,
+							"parameters": [
+								"\"Needs power to use. I hope there is a good game in this.\"",
+								"2"
+							]
+						}
+					],
+					"sid": 181686698573517
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 386459211391679,
+							"parameters": {
+								"object": "Safe"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ShowText",
+							"sid": 343075888776354,
+							"parameters": [
+								"\"It's a electronic lock. Needs power and a keycard to unlock.\"",
+								"2"
+							]
+						}
+					],
+					"sid": 382460687311673
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 556326290927079,
+					"parameters": {
+						"object": "Terminal_Key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Terminal_Key",
+					"sid": 611084013329428
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Keycard1",
+					"sid": 273572861101876,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 713621504102697,
+					"parameters": {
+						"variable": "hasKeycardTerminal",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 673653299968106
 		}
 	],
 	"sid": 590733969866321
