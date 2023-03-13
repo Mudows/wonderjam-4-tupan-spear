@@ -359,6 +359,59 @@
 				}
 			],
 			"sid": 732659467595248
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 315346160481925,
+					"parameters": {
+						"layer": "\"Light\""
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "BlackLightSwitch",
+					"sid": 389435912645031,
+					"parameters": {
+						"instance-variable": "isOn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Code",
+					"sid": 792095159899715,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 377375287568255
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 847688983770593
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Code",
+					"sid": 204312674508487,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 819619308951383
 		}
 	],
 	"sid": 972516201963156

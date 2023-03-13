@@ -149,7 +149,8 @@
 					"FireAxeBox",
 					"FireAxeEmergencyLight",
 					"Closet",
-					"BlackLightSwitch"
+					"BlackLightSwitch",
+					"Code"
 				],
 				"subfolders": [],
 				"name": "Armory"
