@@ -9,6 +9,33 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 931847655020437,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "FireAxeEmergencyLight",
+					"sid": 343459706349301,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "random(0.01,0.3)",
+						"off-time": "random(0.01,0.3)",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 389314373811704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 648081366467535,
@@ -51,6 +78,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 756407357386021,
+					"parameters": {
+						"object": "LightSwitch"
+					}
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 433034645003869,
@@ -68,246 +103,59 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-tap-object",
-							"objectClass": "Touch",
-							"sid": 876262004948250,
-							"parameters": {
-								"object": "LightSwitch"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 571558893798664,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "layer-is-visible",
-									"objectClass": "System",
-									"sid": 795889640937941,
-									"parameters": {
-										"layer": "\"Light\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 247307000611650,
-									"parameters": {
-										"layer": "\"Light\"",
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 633685794118128
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 520595081893454
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 451191486403671,
-									"parameters": {
-										"layer": "\"Light\"",
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 675765025906368
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-tap-object",
-							"objectClass": "Touch",
-							"sid": 752801031103370,
-							"parameters": {
-								"object": "Closet"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Closet",
-							"sid": 573324355921847,
-							"parameters": {
-								"instance-variable": "wasMoved"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "tween-one-property",
-							"objectClass": "Closet",
-							"sid": 749129599688566,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"move\"",
-								"property": "offsetX",
-								"end-value": "Closet.X + 50",
-								"time": "2",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Closet",
-							"sid": 471497033662811,
-							"parameters": {
-								"instance-variable": "wasMoved",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 250002829596136
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-tap-object",
-							"objectClass": "Touch",
-							"sid": 703347923451485,
-							"parameters": {
-								"object": "BlackLightSwitch"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Closet",
-							"sid": 522304384704248,
-							"parameters": {
-								"instance-variable": "wasMoved"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "toggle-boolean-instvar",
-							"objectClass": "BlackLightSwitch",
-							"sid": 560431234998458,
-							"parameters": {
-								"instance-variable": "isOn"
-							}
-						}
-					],
-					"sid": 988947233074502,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "BlackLightSwitch",
-									"sid": 798968158421125,
-									"parameters": {
-										"instance-variable": "isOn"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layer-background-color",
-									"objectClass": "System",
-									"sid": 779598925611866,
-									"parameters": {
-										"layer": "\"Light\"",
-										"color": "rgbEx(93, 12, 237)"
-									}
-								},
-								{
-									"id": "set-layer-opacity",
-									"objectClass": "System",
-									"sid": 773731821712567,
-									"parameters": {
-										"layer": "\"Light\"",
-										"opacity": "10"
-									}
-								}
-							],
-							"sid": 902135392438181
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "BlackLightSwitch",
-									"sid": 738294995901697,
-									"parameters": {
-										"instance-variable": "isOn"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layer-background-color",
-									"objectClass": "System",
-									"sid": 586881893770649,
-									"parameters": {
-										"layer": "\"Light\"",
-										"color": "rgbEx(0, 0, 0)"
-									}
-								},
-								{
-									"id": "set-layer-opacity",
-									"objectClass": "System",
-									"sid": 282997863658621,
-									"parameters": {
-										"layer": "\"Light\"",
-										"opacity": "95"
-									}
-								}
-							],
-							"sid": 303025982602183
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
+							"id": "layer-is-visible",
 							"objectClass": "System",
-							"sid": 616769590197861
+							"sid": 605797359632315,
+							"parameters": {
+								"layer": "\"Light\""
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-visible",
-							"objectClass": "FireAxeEmergencyLight",
-							"sid": 486280234996695,
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 189712872829191,
 							"parameters": {
+								"layer": "\"Light\"",
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 696032854510029
+					"sid": 411456189590803
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 657837731965308
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 519803409571861,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 188804556235752
 				}
 			]
 		},
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 843787474565215
+				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
@@ -320,125 +168,18 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
-			"sid": 837014641555719,
-			"children": [
+			"actions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 720039858404953,
-							"parameters": {
-								"interval-seconds": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "flash",
-							"objectClass": "FireAxeEmergencyLight",
-							"sid": 580152870626399,
-							"behaviorType": "Flash",
-							"parameters": {
-								"on-time": "random(0.01,0.3)",
-								"off-time": "random(0.01,0.3)",
-								"duration": "1.0"
-							}
-						}
-					],
-					"sid": 271396451076624
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 564529725022484
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 796700145515195,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 461829279893989
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BlackLightSwitch",
-					"sid": 995307366353735,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 319162560875798,
 					"parameters": {
-						"instance-variable": "isOn"
+						"layer": "\"Light\"",
+						"visibility": "visible"
 					}
 				}
 			],
-			"actions": [],
-			"sid": 540698396983279,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 728261108302903,
-							"parameters": {
-								"layer": "\"Light\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "pwClue",
-							"sid": 713044740620294,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 506850258872269
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 424359649003773,
-							"parameters": {
-								"layer": "\"Light\""
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "pwClue",
-							"sid": 120690696123142,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 921134578167850
-				}
-			]
+			"sid": 837014641555719
 		}
 	],
 	"sid": 972516201963156

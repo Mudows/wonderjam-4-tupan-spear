@@ -1,37 +1,35 @@
 {
-	"name": "BlackLightSwitch",
+	"name": "Closet",
 	"plugin-id": "Sprite",
-	"sid": 783156437921053,
+	"sid": 958622483317617,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "isOn",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 810696833030937
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 938911523199408
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8912479,
+						"imageSpriteId": 7458109,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 837549744746317,
+				"sid": 344776654644784,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

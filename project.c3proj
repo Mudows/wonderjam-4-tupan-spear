@@ -79,10 +79,7 @@
 	],
 	"uniqueId": "70u74uy4i3m",
 	"objectTypes": {
-		"items": [
-			"Closet",
-			"pwClue"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -151,6 +148,7 @@
 				"items": [
 					"FireAxeBox",
 					"FireAxeEmergencyLight",
+					"Closet",
 					"BlackLightSwitch"
 				],
 				"subfolders": [],
