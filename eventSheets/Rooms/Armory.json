@@ -78,14 +78,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 756407357386021,
-					"parameters": {
-						"object": "LightSwitch"
-					}
-				},
-				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 433034645003869,
@@ -103,59 +95,131 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 605797359632315,
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 587694719531150,
 							"parameters": {
-								"layer": "\"Light\""
+								"object": "LightSwitch"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 830588890660080,
+					"children": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 189712872829191,
-							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 216259013001199,
+									"parameters": {
+										"layer": "\"Light\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 274984401515695,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 538707365448531
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 787407124124856
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 498302721475717,
+									"parameters": {
+										"layer": "\"Light\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 822824979265256
 						}
-					],
-					"sid": 411456189590803
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 447687275658047,
+							"parameters": {
+								"object": "Closet"
+							}
+						},
+						{
+							"id": "layer-is-visible",
 							"objectClass": "System",
-							"sid": 657837731965308
+							"sid": 361149859892869,
+							"parameters": {
+								"layer": "\"Light\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Closet",
+							"sid": 104498392984929,
+							"parameters": {
+								"instance-variable": "wasMoved"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 519803409571861,
+							"id": "set-boolean-instvar",
+							"objectClass": "Closet",
+							"sid": 959461697625308,
 							"parameters": {
-								"layer": "\"Light\"",
-								"visibility": "visible"
+								"instance-variable": "wasMoved",
+								"value": "true"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Closet",
+							"sid": 669527789133785,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"move closet\"",
+								"property": "offsetX",
+								"end-value": "Closet.X + 30",
+								"time": "1.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
 							}
 						}
 					],
-					"sid": 188804556235752
+					"sid": 139843008992352
 				}
 			]
 		},
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 843787474565215
-				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
@@ -168,18 +232,186 @@
 					"isInverted": true
 				}
 			],
+			"actions": [],
+			"sid": 837014641555719,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 585075359849562
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 415694244379537,
+							"parameters": {
+								"layer": "\"Light\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 172001113546987
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "BlackLightSwitch",
+					"sid": 965472122129577,
+					"parameters": {
+						"instance-variable": "isOn"
+					}
+				}
+			],
 			"actions": [
 				{
-					"id": "set-layer-visible",
+					"id": "set-layer-opacity",
 					"objectClass": "System",
-					"sid": 319162560875798,
+					"sid": 908262440605993,
 					"parameters": {
 						"layer": "\"Light\"",
+						"opacity": "15"
+					}
+				},
+				{
+					"id": "set-layer-background-color",
+					"objectClass": "System",
+					"sid": 796375833640872,
+					"parameters": {
+						"layer": "\"Light\"",
+						"color": "rgbEx(93, 12, 237)"
+					}
+				}
+			],
+			"sid": 649529440370261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "BlackLightSwitch",
+					"sid": 101765987382931,
+					"parameters": {
+						"instance-variable": "isOn"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 880324823672411,
+					"parameters": {
+						"layer": "\"Light\"",
+						"opacity": "95"
+					}
+				},
+				{
+					"id": "set-layer-background-color",
+					"objectClass": "System",
+					"sid": 790450387123910,
+					"parameters": {
+						"layer": "\"Light\"",
+						"color": "rgbEx(0, 0, 0)"
+					}
+				}
+			],
+			"sid": 794128898863398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 735960043898971,
+					"parameters": {
+						"object": "BlackLightSwitch"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Closet",
+					"sid": 812152576585919,
+					"parameters": {
+						"instance-variable": "wasMoved"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "BlackLightSwitch",
+					"sid": 916109605409946,
+					"parameters": {
+						"instance-variable": "isOn"
+					}
+				}
+			],
+			"sid": 732659467595248
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 315346160481925,
+					"parameters": {
+						"layer": "\"Light\""
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "BlackLightSwitch",
+					"sid": 389435912645031,
+					"parameters": {
+						"instance-variable": "isOn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Code",
+					"sid": 792095159899715,
+					"parameters": {
 						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 837014641555719
+			"sid": 377375287568255
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 847688983770593
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Code",
+					"sid": 204312674508487,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 819619308951383
 		}
 	],
 	"sid": 972516201963156

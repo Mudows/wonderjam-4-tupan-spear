@@ -26,6 +26,7 @@
 		"PasswordPart_B",
 		"PasswordPart_A",
 		"PasswordPart_C",
-		"Terminal_Key"
+		"Terminal_Key",
+		"BlackLightSwitch"
 	]
 }

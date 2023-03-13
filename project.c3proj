@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside layout",
 			"author": "Scirra",
@@ -140,7 +147,10 @@
 			{
 				"items": [
 					"FireAxeBox",
-					"FireAxeEmergencyLight"
+					"FireAxeEmergencyLight",
+					"Closet",
+					"BlackLightSwitch",
+					"Code"
 				],
 				"subfolders": [],
 				"name": "Armory"

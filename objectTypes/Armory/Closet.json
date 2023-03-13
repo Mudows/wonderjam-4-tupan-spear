@@ -1,0 +1,51 @@
+{
+	"name": "Closet",
+	"plugin-id": "Sprite",
+	"sid": 958622483317617,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "wasMoved",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 981482177653180
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 938911523199408
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7458109,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 344776654644784,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
