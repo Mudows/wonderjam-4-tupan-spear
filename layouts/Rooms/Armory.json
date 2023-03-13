@@ -171,7 +171,9 @@
 						"live-preview": false
 					},
 					"uid": 52,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"wasMoved": false
+					},
 					"behaviors": {
 						"Tween": {
 							"properties": {

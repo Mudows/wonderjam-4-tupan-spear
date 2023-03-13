@@ -45,7 +45,7 @@
 			"eventType": "variable",
 			"name": "roomWithPower",
 			"type": "string",
-			"initialValue": "Power Off",
+			"initialValue": "Armory",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
